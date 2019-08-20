@@ -9,7 +9,7 @@ import (
 
 func main() {
 	fmt.Println("hi")
-	http.HandleFunc("/", controller.Handler)
+	http.HandleFunc("/", controller.Router)
 	log.Fatal(http.ListenAndServe(":8081", nil))
 	//models.Read()
 }
